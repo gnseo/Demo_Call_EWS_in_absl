@@ -1,8 +1,10 @@
 # Flow Instruction
 
 In this case, I'm going to send requests to "Web Service" which is on the same ByDesign Tenent.
-
-![Alt text](https://g.gravizo.com/svg?
+![Alt text](https://g.gravizo.com/source/custom_mark10?https%3A%2F%2Fraw.githubusercontent.com%2Fkieat%2FDemo_Call_EWS_in_absl%2Fmaster%2Fdocs%2Fget_started.md)
+<details>
+<summary></summary>
+custom_mark10
   digraph G {
     Custom_Inbound_Service -> Communication_Scenario_I [label="A2X"];
     Communication_Scenario_I -> Custom_Inbound_Service;
@@ -20,7 +22,9 @@ In this case, I'm going to send requests to "Web Service" which is on the same B
     Communication_Arrangement_O -> Communication_Scenario_O;
     Custom_Outbound_Service -> Standard_Web_Service_Request;
     Standard_Web_Service_Request -> Standard_Web_Service_Response;
-  })
+  }
+custom_mark10
+</details>
 
 #### Here is my scenario.
 I need to implement an interface that receive and save logging data of production confirmations from third-party system, and post production confirmations on my tenent by using those logs.
